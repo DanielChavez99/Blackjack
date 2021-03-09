@@ -66,7 +66,7 @@ namespace Blackjack
                 WriteLine("\nHit or Stand? (Enter H or S): ");
                 char x = Console.ReadKey(true).KeyChar;
 
-                //If player stands, dealer hits until his hand is in a range [17, 21] points or busts
+                //If player stands, dealer hits until his points are between the player's and 21 or the dealer busts
                 if(x == 'S' || x == 's')
                 {
                     WriteLine("\nPlayer stands!");
